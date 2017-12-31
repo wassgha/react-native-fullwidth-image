@@ -26,7 +26,7 @@ You can provide an initial width and height, `react-native-fullwidth-image` will
 infer the aspect ratio from the provided dimensions and keep it as the image is
 scaled up to 100% of its parent's width
 
-```js
+```html
   <FullWidthImage style={{ ... }} source={require(...)} width={480} height={272} />
 ```
 **An aspect ratio of 1 will give you square images**
@@ -35,10 +35,10 @@ scaled up to 100% of its parent's width
 
 You can also provide a predefined aspect ratio (a value between 0 and 1) as follows
 
-```js
+```html
   <FullWidthImage style={{ ... }} source={{uri: ..}} ratio={3/4} />
 ```
-**An aspect ratio of 1 will give you square images**
+_An aspect ratio of 1 will give you square images_
 
 #### Automatic detection
 
@@ -46,7 +46,7 @@ You can also provide a predefined aspect ratio (a value between 0 and 1) as foll
 remote images, all you need to provide is the `uri` as you would do with the
 regular `Image` component.
 
-```js
+```html
   <FullWidthImage style={{ ... }} source={{uri: ..}} />
 ```
 
