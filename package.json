@@ -1,0 +1,33 @@
+{
+  "name": "react-native-fullwidth-image",
+  "version": "0.1.0",
+  "description": "A responsive Image element that takes the full width of its parent element while maintaining aspect ratio.",
+  "main": "index.js",
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "mobile",
+    "ios",
+    "android",
+    "ui",
+    "full-width",
+    "width",
+    "100%",
+    "square",
+    "image"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wassgha/react-native-fullwidth-image.git"
+  },
+  "author": "Wassim Gharbi <wassgha@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wassgha/react-native-fullwidth-image/issues"
+  },
+  "homepage": "https://github.com/wassgha/react-native-fullwidth-image",
+  "dependencies": {
+  }
+}
