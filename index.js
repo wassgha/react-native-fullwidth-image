@@ -9,8 +9,8 @@ import React, { Component } from 'react'
 import { View, Image } from 'react-native'
 
 export default class FullWidthImage extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
 
         this.state = {
             width: this.props.width || null,
@@ -46,10 +46,10 @@ export default class FullWidthImage extends Component {
             <View onLayout={this._onLayout.bind(this)}>
                 <Image
                     source={this.props.source}
-                    style={{
+                    style={[this.props.style, {
                         width: this.state.width,
                         height: this.state.height
-                    }}
+                    }]}
                 />
             </View>
         )
