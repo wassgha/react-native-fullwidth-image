@@ -9,8 +9,8 @@ import React, { Component } from 'react'
 import { View, Image } from 'react-native'
 
 export default class FullWidthImage extends Component {
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
 
         this.state = {
             width: this.props.width || null,
