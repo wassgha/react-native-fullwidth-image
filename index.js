@@ -18,6 +18,10 @@ export default class FullWidthImage extends Component {
         }
     }
 
+    setNativeProps(nativeProps) {
+      this._root.setNativeProps(nativeProps);
+    }
+
     _onLayout(event) {
         const containerWidth = event.nativeEvent.layout.width
 
@@ -43,13 +47,13 @@ export default class FullWidthImage extends Component {
 
     render() {
         return (
-            <View onLayout={this._onLayout.bind(this)}>
+            <View ref={component => this._root = component} onLayout={this._onLayout.bind(this)}>
                 <Image
                     source={this.props.source}
-                    style={{
+                    style={[this.props.style, {
                         width: this.state.width,
                         height: this.state.height
-                    }}
+                    }]}
                 />
             </View>
         )
