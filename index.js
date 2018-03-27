@@ -13,8 +13,8 @@ export default class FullWidthImage extends Component {
         super(props)
 
         this.state = {
-            width: this.props.width || null,
-            height: this.props.height || null
+            width: props.width || null,
+            height: props.height || null
         }
     }
 
