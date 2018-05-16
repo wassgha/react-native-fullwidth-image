@@ -6,7 +6,7 @@
 */
 
 import React, { Component } from 'react'
-import { View, Image } from 'react-native'
+import { View, Image, StyleSheet } from 'react-native'
 
 export default class FullWidthImage extends Component {
     constructor(props) {
@@ -47,7 +47,11 @@ export default class FullWidthImage extends Component {
 
     render() {
         return (
-            <View ref={component => this._root = component} onLayout={this._onLayout.bind(this)}>
+            <View
+                ref={component => this._root = component}
+                onLayout={this._onLayout.bind(this)}
+                style={styles.container}
+            >
                 <Image
                     source={this.props.source}
                     style={[this.props.style, {
@@ -59,3 +63,9 @@ export default class FullWidthImage extends Component {
         )
     }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    alignSelf: 'stretch'
+  }
+});
