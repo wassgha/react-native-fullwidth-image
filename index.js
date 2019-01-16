@@ -58,6 +58,9 @@ export default class FullWidthImage extends Component {
                         width: this.state.width,
                         height: this.state.height
                     }]}
+                    onLoad={this.props.onLoad}
+                    onLoadEnd={this.props.onLoadEnd}
+                    onLoadStart={this.props.onLoadStart}
                 />
             </View>
         )
