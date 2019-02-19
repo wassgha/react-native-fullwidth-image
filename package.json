@@ -1,6 +1,6 @@
 {
   "name": "react-native-fullwidth-image",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description":
     "A responsive Image element that takes the full width of its parent element while maintaining aspect ratio.",
   "main": "index.js",
