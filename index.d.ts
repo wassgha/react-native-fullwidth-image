@@ -5,6 +5,9 @@ declare module 'react-native-fullwidth-image' {
 	type Props = {
 		style?: StyleProp<ImageStyle>,
 		source: ImageSourcePropType,
+		width?: number;
+		height?: number;
+		ratio?: number;
 		onLoad?: (event: NativeSyntheticEvent<ImageLoadEventData>) => void,
 		onLoadEnd?: () => void,
 		onLoadStart?: () => void
